@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usuwanie konta — Usługi na Już</title>
+  <meta name="description" content="Instrukcje usuwania konta i zakres usuwanych danych w aplikacji Usługi na Już." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #11172a;
+      --text: #e9eef7;
+      --muted: #a9b3c7;
+      --accent: #6aa0ff;
+      --border: #1f2942;
+    }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial; line-height:1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header {
+      background: radial-gradient(1200px 600px at 10% -20%, #16305f 0%, transparent 60%),
+                  radial-gradient(1000px 500px at 90% -30%, #1d4ed8 0%, transparent 60%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 0; margin-bottom: 24px;
+    }
+    .title { font-weight: 800; font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.02em; margin: 0 0 8px 0; }
+    .subtitle { margin: 0; color: var(--muted); font-size: clamp(14px, 2vw, 16px); }
+    nav.quicknav { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    nav.quicknav a { border: 1px solid var(--border); background: rgba(255,255,255,0.02); padding: 8px 12px; border-radius: 999px; font-size: 14px; }
+    section.card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 20px; margin: 16px 0; }
+    h2, h3 { letter-spacing: -0.01em; margin-top: 0; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; color: var(--muted); }
+    .muted { color: var(--muted); }
+    ul.inline > li { margin: 4px 0; }
+    .badge { display:inline-block; font-size:12px; border:1px solid var(--border); padding:4px 8px; border-radius:999px; color:var(--muted); margin-right:8px; }
+    .note { background: rgba(255,255,255,0.03); border: 1px dashed var(--border); padding: 12px; border-radius: 12px; }
+    footer { border-top: 1px solid var(--border); margin-top: 24px; padding: 24px 0 48px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="title">Usuwanie konta — Usługi na Już</h1>
+      <p class="subtitle">Jak usunąć konto i jakie dane są usuwane • Data ostatniej aktualizacji: 27 sierpnia 2025</p>
+      <nav class="quicknav" aria-label="Szybka nawigacja">
+        <a href="#how">Jak usunąć konto</a>
+        <a href="#scope">Zakres usuwanych danych</a>
+        <a href="#retention">Co może pozostać</a>
+        <a href="#timeline">Terminy realizacji</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="card" id="how">
+      <h2>Jak usunąć konto</h2>
+      <ol>
+        <li>Wyślij wiadomość e‑mail z adresu powiązanego z Twoim kontem na: <a href="mailto:usluginajuz@gmail.com">usluginajuz@gmail.com</a>.</li>
+        <li>W temacie wpisz <strong>„Usunięcie konta — Usługi na Już”</strong>, a w treści podaj: imię/nazwę profilu oraz numer telefonu (jeśli był zapisany).</li>
+        <li>Po potwierdzeniu tożsamości rozpoczniemy procedurę trwałego usunięcia konta i danych opisanych poniżej.</li>
+      </ol>
+      <p class="note">Jeśli w aplikacji dostępna jest opcja „Usuń konto”, możesz skorzystać z niej zamiast e‑maila. W obu przypadkach efekt jest taki sam.</p>
+    </section>
+
+    <section class="card" id="scope">
+      <h2>Zakres usuwanych danych</h2>
+      <p>Po zainicjowaniu usunięcia konta trwale usuwamy (lub anonimizujemy):</p>
+      <ul class="inline">
+        <li>dane konta: adres e‑mail, imię/nazwa, numer telefonu, rola użytkownika,</li>
+        <li>profil firmy dodany przez Ciebie (wraz z usługami, godzinami, przerwami),</li>
+        <li>zlecenia dodane przez Ciebie oraz powiązane załączniki/zdjęcia,</li>
+        <li>polubienia/ulubione,</li>
+        <li>aktywne i przyszłe rezerwacje — zostają anulowane.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="retention">
+      <h2>Co może pozostać (uzasadniony interes i rozliczalność)</h2>
+      <ul class="inline">
+        <li>techniczne logi systemowe i kopie zapasowe (przechowywane tymczasowo po stronie dostawcy — <span class="badge">Supabase</span>),</li>
+        <li>anonimowe rekordy statystyczne, których nie da się odwrócić do danych osobowych,</li>
+        <li>informacje wymagane prawem (np. dokumentacja księgowa, jeżeli dotyczy).</li>
+      </ul>
+      <p class="muted">Kopie zapasowe są nadpisywane zgodnie z cyklem retencji dostawcy i nie są używane operacyjnie.</p>
+    </section>
+
+    <section class="card" id="timeline">
+      <h2>Terminy realizacji</h2>
+      <ul class="inline">
+        <li><strong>Potwierdzenie przyjęcia wniosku:</strong> do 7 dni roboczych.</li>
+        <li><strong>Usunięcie danych operacyjnych:</strong> do 14 dni od potwierdzenia.</li>
+        <li><strong>Pełne usunięcie z kopii zapasowych:</strong> zgodnie z cyklem retencji dostawcy (zwykle do 30 dni).</li>
+      </ul>
+      <p>W okresie do 7 dni od potwierdzenia możesz poprosić o <em>cofnięcie usuwania</em>. Po tym czasie proces jest nieodwracalny.</p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Kontakt</h2>
+      <p>Administrator: <strong>Stanisław Kryński</strong><br>
+      E‑mail: <a href="mailto:usluginajuz@gmail.com">usluginajuz@gmail.com</a></p>
+      <p class="muted">Jeżeli Twoje konto zostało utworzone przez logowanie e‑mail/hasło, usunięcie obejmie również dane uwierzytelniające powiązane z tym kontem.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Usługi na Już — Stanisław Kryński. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+</body>
+</html>
